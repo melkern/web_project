@@ -1,0 +1,268 @@
+<<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Паспорт</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@100;200;300;400;500;600;
+    700&family=Inter+Tight:ital, wght@0, 100..900;1,100..900&family=PT+Sans+Caption:wght@400;700&family=Poiret+One&display=swap" rel='stylesheet'>
+
+    <style>
+
+    </style>
+
+    </head>
+
+    <body>
+    <h1>Паспорт</h1>
+    <div id='main_fon'>
+
+        <h5 id='pass_title' class='poiret-one-regular'>РОССИЙСКАЯ ФЕДЕРАЦИЯ</h5>
+        <div id='page_top'>
+            <p class='vidanstr1'>ОТДЕЛОМ ВНУТРЕННИХ ДЕЛ</p>
+            <p class='vidanstr2'>ГОР. НИЖНИЙ НОВГОРОД</p>
+            <p class='vidanstrdata'>16. 06. 2004</p>
+            <p class='vidanstrcode'>630-002</p>
+            <img class="podpis" src='podpis1.png'>
+            <img class="podpis1" src='podpis.png'>
+        </div>
+
+        <div id='page_bottom'>
+            <img class='passfoto' src="foto.jpg">
+            <p class='hfamilia'>ИВАНОВ</p>
+            <p class='hname'>ИВАН</p>
+            <p class='hfname'>ИВАНОВИЧ</p>
+            <p class='hpol'>МУЖ</p>
+            <p class='hborn'>28.12.1984</p>
+            <p class='hpborn1'>ГОР. НИЖНИЙ НОВГОРОД</p>
+            <p class='hpborn2'>НИЖЕГОРОДСКОЙ ОБЛ.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+   <div class="passport-info">
+        <p>Фамилия: <span id="surname">Мелконян</span></p>
+        <p>Имя: <span id="name">Карина</span></p>
+        <p>Отчество: <span id="patronymic">Кареновна</span></p>
+        <p>Дата рождения: <span id="date-of-birth">26.05.2005</span></p>
+        <p>Пол: <span id="gender">Женский</span></p>
+        <p>Место рождения: <span id="birthplace">Москва</span></p>
+        <p>Кем выдан: <span id="issued-by">Управление МВД России</span></p>
+        <p>Код подразделения: <span id="division-code">123-456</span></p>
+        <p>Личный код: <span id="personal-code">1234567890</span></p>
+        <p>Личная подпись: <span id="signature">[Подпись]</span></p>
+        <p>Дата выдачи: <span id="issue-date">01.01.2010</span></p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM_JS. Считываем информацию из DOM</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        input[type="text"], input[type="date"] {
+            width: calc(100% - 20px);
+            padding: 12px;
+            border: 1px solid #4e3b3b; /* Темно-коричневый цвет */
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', serif; /* Винтажный шрифт для полей ввода */
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #4e3b3b; /* Темно-коричневый цвет */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px; /* Увеличенный размер шрифта для кнопки */
+            transition: background-color 0.3s;
+            font-family: 'Times New Roman', serif; /* Винтажный шрифт для кнопки */
+        }
+        input[type="submit"]:hover {
+            background-color: #4e3b3b; /* Более темный оттенок для эффекта наведения */
+        }
+         .screenshot {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .screenshot img {
+            max-width: 100px; /* Начальный размер изображения */
+            height: auto; /* Автоматическая высота для сохранения пропорций */
+            border: 2px solid #6f4c3e; /* Тёмно-коричневая рамка вокруг изображения */
+            border-radius: 8px; /* Закруглённые углы для изображения */
+            cursor: pointer; /* Указатель при наведении */
+            transition: transform 0.3s; /* Плавный переход для увеличения */
+        }
+        .screenshot img.large {
+            max-width: 500px; /* Размер изображения при увеличении */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navigation">
+    <a href="index.html">Главная</a>
+    <a href="#head1">Где нас найти?</a>
+    <a href="https://web.telegram.org/k/#@vanes_vintage" target="_self"><img height="20px" src="tg.jpg"></a>
+    <a href="https://secondmap.ru/" target="_blank">Карта магазинов</a>
+    <a href="page1.html">Контактные данные</a>
+    <a href="page2.html" >Заказы</a>
+    <a href="DOM.html" class="active">Паспорт</a>
+    <a href="dom_js_1.html">Изменяем кириллицу на латиницу</a>
+    <a href="dom_js_2.html">Задание 2</a>
+    <a href="dom_js_3.html">Задание 3</a>
+  </div>
+
+
+   <h1>Паспорт</h1>
+    <div id='main_fon'>
+
+        <h5 id='pass_title' class='poiret-one-regular'>РОССИЙСКАЯ ФЕДЕРАЦИЯ</h5>
+        <div id='page_top'>
+            <p class='vidanstr1'><span id="issued-by">ОТДЕЛОМ ВНУТРЕННИХ ДЕЛ</span></p>
+            <p class='vidanstr2'><span id="birthplace">ГОР. НИЖНИЙ НОВГОРОД</span></p>
+            <p class='vidanstrdata'>16. 06. 2004</p>
+            <p class='vidanstrcode'>630-002</p>
+            <img class="podpis" src='podpis1.png'>
+            <img class="podpis1" src='podpis.png'>
+        </div>
+
+        <div id='page_bottom'>
+            <img class='passfoto' src="foto.jpg">
+            <p class='hfamilia'><span id="surname">ИВАНОВ</span></p>
+            <p class='hname'><span id="name">ИВАН</span></p>
+            <p class='hfname'><span id="patronymic">ИВАНОВИЧ</span></p>
+            <p class='hpol'><span id="gender">МУЖ</span></p>
+            <p class='hborn'><span id="dateOfBirth">28.12.1984</span></p>
+            <p class='hpborn1'><span id="birthCity">ГОР. НИЖНИЙ НОВГОРОД</span></p>
+            <p class='hpborn2'><span id="birthRegion">НИЖЕГОРОДСКОЙ ОБЛ.</span></p>
+        </div>
+    </div>
+    <h2>Считываем данные из DOM</h2>
+    <!-- Кнопка для считывания данных -->
+    <button id="readDataButton">Считать данные</button>
+
+    <div id="output"></div>
+
+    <h2>Скриншот</h2>
+    <a href="screen.png" target="_blank">
+        <img src="screen.png"  width="100">
+    </a>
+
+
+
+    <script>
+        // Обработчик события для считывания данных из DOM
+        document.getElementById("readDataButton").addEventListener("click", function() {
+            // Получаем все теги <p> на странице
+            const paragraphs = document.getElementsByTagName('p');
+
+            // Извлекаем данные по индексам
+            const surname = paragraphs[7].innerText; // 7-й параграф - Фамилия
+            const name = paragraphs[8].innerText; // 8-й параграф - Имя
+            const patronymic = paragraphs[9].innerText; // 9-й параграф - Отчество
+            const gender = paragraphs[10].innerText; // 10-й параграф - Пол
+            const dateOfBirth = paragraphs[11].innerText; // 11-й параграф - Дата рождения
+            const birthCity = paragraphs[12].innerText; // 12-й параграф - Город рождения
+            const birthRegion = paragraphs[13].innerText; // 13-й параграф - Регион
+
+            // Отображаем данные в консоли и на экране
+            console.log(`Фамилия: ${surname}, Имя: ${name}, Отчество: ${patronymic}, Дата рождения: ${dateOfBirth}, Пол: ${gender}, Место рождения: ${birthCity}, Регион: ${birthRegion}`);
+            document.getElementById('output').innerText = `Фамилия: ${surname}, Имя: ${name}, Отчество: ${patronymic}, Дата рождения: ${dateOfBirth}, Пол: ${gender}, Место рождения: ${birthCity}, Регион: ${birthRegion}`;
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<h2> Паспорт</h2>
+<div id="passport-data">
+
+    <p>Фамилия: <span id="surname-ru">Мелконян</span></p>
+    <p>Имя: <span id="name-ru">Карина</span></p>
+    <p>Отчество: <span id="patronymic-ru">Кареновна</span></p>
+    <p>Дата рождения: <span id="birthdate-ru">26.05.2005</span></p>
+    <p>Пол: <span id="gender-ru">Женский</span></p>
+    <p>Место рождения: <span id="birthplace-ru">Москва</span></p>
+    <p>Кем выдан: <span id="issued-ru">Управление МВД России</span></p>
+    <p>Код подразделения: <span id="department-code-ru">123-456</span></p>
+    <p>Личный код: <span id="personal-code-ru">1234567890</span></p>
+    <p>Личная подпись: <span id="signature-ru">[Подпись]</span></p>
+    <p>Дата выдачи: <span id="issue-date-ru">01.01.2010</span></p>
+</div>
+<p id="for_click">кликните здесь</p>
+
+<script>
+    function changeToLatin() {
+        const surnameRu = document.getElementById("surname-ru");
+        const nameRu = document.getElementById("name-ru");
+        const patronymicRu = document.getElementById("patronymic-ru");
+        const birthdateRu = document.getElementById("birthdate-ru");
+        const genderRu = document.getElementById("gender-ru");
+        const birthplaceRu = document.getElementById("birthplace-ru");
+        const issuedRu = document.getElementById("issued-ru");
+        const departmentCodeRu = document.getElementById("department-code-ru");
+        const personalCodeRu = document.getElementById("personal-code-ru");
+        const signatureRu = document.getElementById("signature-ru");
+        const issueDateRu = document.getElementById("issue-date-ru");
+
+        surnameRu.textContent = surnameRu.textContent.replace(/Мелконян/g, "MELKONYAN");
+        nameRu.textContent = nameRu.textContent.replace(/Карина/g, "KARINA");
+        birthdateRu.textContent = birthdateRu.textContent.replace(/26.05.2005/g, "26.05.2005");
+
+        surnameRu.style.fontWeight = 'bold';
+        nameRu.style.fontWeight = 'bold';
+        birthdateRu.style.fontWeight = 'bold';}
+
+    const nodeForClick = document.getElementById("for_click");
+    nodeForClick.addEventListener("click", changeToLatin);
+</script>

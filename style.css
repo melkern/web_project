@@ -1,0 +1,343 @@
+  /* Медиазапросы для адаптивной верстки */
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: column; /* Переключение на вертикальное выравнивание */
+            align-items: center; /* Центрирование элементов */
+        }
+
+        .description {
+            margin-left: 0; /* Убираем отступ слева */
+            margin-right: 0; /* Убираем отступ справа */
+            text-align: center; /* Выравнивание текста по центру */
+        }
+
+        .image {
+            margin: 0; /* Убираем отступы вокруг изображения */
+        }
+
+        .navigation {
+            display: flex;
+            flex-direction: column; /* Вертикальное расположение ссылок */
+            align-items: center; /* Центрирование ссылок */
+        }
+
+        .navigation a {
+            margin: 10px 0; /* Отступы между ссылками */
+        }
+
+        /* Изменение размера шрифта */
+        p {
+            font-size: 14px; /* Уменьшение размера шрифта на мобильных устройствах */
+        }
+    }
+
+    @media (max-width: 480px) {
+        p {
+            font-size: 12px; /* Дополнительное уменьшение размера шрифта на очень маленьких экранах */
+        }
+    }
+
+
+
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #4e3b3b;
+}
+
+table {
+  margin-top: 100px;
+  border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    background-image: url('backround.jpg');
+    background-size: cover;
+    border: 2px solid #4e3b3b;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 2px solid #4e3b3b;
+}
+
+th {
+    background-color: #4e3b3b;
+    font-size: 1.2em;
+    color: #f5f5f5;
+}
+
+td {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+
+h1, h2, h3 {
+    color: #4e3b3b;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+.section {
+    margin: 50px 0;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.thumbnail {
+    width: 100px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+}
+
+
+.navigation {
+    background-color: #4e3b3b;
+    padding: 10px;
+    text-align: center;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #f0f0f0;
+    margin: 0 10px;
+}
+
+.navigation a.active {
+    font-weight: bold;
+}
+
+
+
+
+
+.top-nav {
+    background-color: #f5f5f5 ;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.top-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 30px;
+    background-color: #4e3b3b;
+    border-radius: 30px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.top-nav a:hover {
+    color: #b3b3b3;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    min-width: unset;
+    min-height: unset;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #919191;
+}
+
+
+h1, h3 {
+    text-align: center;
+    color: #4e3b3b;
+}
+
+
+.image-links img, .album img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background: #4e3b3b;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #555;
+}
+
+
+
+
+
+
+
+#main_fon{
+  height:734px;
+  background-image: url(fon.jpg);
+  background-repeat: no-repeat;}
+
+#pass_title{
+  padding-top: 41px;
+  padding-left: 74px;
+  }
+.poiret-one-regular{
+  font-family:'Poiret One', sans-serif;
+  font-weight: italic;
+  font-style: normal;
+  letter-spacing: 0.8em;
+  word-spacing: 0.25em;
+}
+@font-face{
+  font-family: 'Kreadon';
+  src: local('Kreadon.ttf'),
+   url(/Kreadon.ttf.ttf);
+}
+.vidanstr1{
+  font-family: 'Kreadon';
+  padding-top: 20px;
+  padding-left: 145px;}
+
+.vidanstr2{
+  font-family: 'Kreadon';
+  padding-top: 10px;
+  padding-left: 175px;
+  word-spacing: 0.65em;
+}
+
+.vidanstrdata{
+  font-family: 'Kreadon';
+  padding-top: 37px;
+  padding-left: 105px;
+  word-spacing: 0.65em;
+  float:left;
+
+}
+
+.vidanstrcode{
+  font-family: 'Kreadon';
+  padding-top: 37px;
+  padding-left: 295px;
+  word-spacing: 0.65em;
+}
+
+.podpis{
+  padding-top: 30px;
+  padding-left: 55px;
+  float:left;
+}
+
+.podpis1{
+  padding-top: 50px;
+  padding-left: 115px;
+}
+
+.passfoto{
+  padding-top: 150px;
+  padding-left: 22px;
+  float:left;
+}
+.hfamilia{
+  padding-top: 105px;
+  padding-left: 250px;
+}
+
+.hname{
+  padding-top: 37px;
+  padding-left: 250px;
+}
+
+.hfname{
+  padding-top: 10px;
+  padding-left: 250px;
+
+}
+
+.hpol{
+  padding-top: 10px;
+  padding-left: 40px;
+  float:left;
+}
+
+.hborn{
+  padding-top: 10px;
+  padding-left: 340px;
+}
+
+.hpborn1{
+  padding-top: 6px;
+  padding-left: 250px;
+  word-spacing: 0.7em;
+}
+
+.hpborn2{
+  padding-top: 10px;
+  padding-left: 250px;
+}
+
+
+
+
